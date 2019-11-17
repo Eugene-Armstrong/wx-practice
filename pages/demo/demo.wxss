@@ -1,0 +1,26 @@
+/* pages/demo/demo.wxss */
+.my-container {
+  padding: 20rpx;
+}
+swiper {
+  overflow: hidden;
+  border-radius: 20rpx;
+}
+.swiper-item {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  color: #FFFFFF;
+  font-size: 18px;
+}
+.demo-text-1 {
+  background-color: #1AAD19;
+}
+.demo-text-2 {
+  background-color: #2782D7;
+}
+.demo-text-3 {
+  background-color: #d72736;
+}

@@ -1,0 +1,15 @@
+<!--pages/demo/demo.wxml-->
+<view class="my-container">
+  <view class="page-body">
+    <view class="swiper">
+      <swiper indicator-dots="{{indicatorDots}}"
+        autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+        <block wx:for="{{background}}" wx:key="*this">
+          <swiper-item>
+            <view class="swiper-item {{item}}"></view>
+          </swiper-item>
+        </block>
+      </swiper>
+    </view>
+  </view>
+</view>
