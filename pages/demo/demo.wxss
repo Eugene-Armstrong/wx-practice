@@ -1,4 +1,4 @@
-/* pages/demo/demo.wxss */
+@import '../../weui.wxss';
 .my-container {
   padding: 20rpx;
 }
@@ -23,4 +23,11 @@ swiper {
 }
 .demo-text-3 {
   background-color: #d72736;
+}
+/*style overwrite*/
+.weui-uploader__img {
+  width: 100%
+}
+.weui-uploader__input-box {
+  width: 30%
 }
