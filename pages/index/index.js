@@ -7,7 +7,9 @@ Page({
     motto: 'Hello World',
     userInfo: {},
     hasUserInfo: false,
-    canIUse: wx.canIUse('button.open-type.getUserInfo')
+    canIUse: wx.canIUse('button.open-type.getUserInfo'),
+    inputShowed: false,
+    inputVal: ""
   },
   //事件处理函数
   bindViewTap: function() {
@@ -50,5 +52,26 @@ Page({
       userInfo: e.detail.userInfo,
       hasUserInfo: true
     })
+  },
+  showInput: function () {
+    this.setData({
+      inputShowed: true
+    });
+  },
+  hideInput: function () {
+    this.setData({
+      inputVal: "",
+      inputShowed: false
+    });
+  },
+  clearInput: function () {
+    this.setData({
+      inputVal: ""
+    });
+  },
+  inputTyping: function (e) {
+    this.setData({
+      inputVal: e.detail.value
+    });
   }
 })

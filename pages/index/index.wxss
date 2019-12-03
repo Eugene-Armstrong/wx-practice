@@ -6,9 +6,9 @@
 }
 
 .userinfo-avatar {
-  width: 128rpx;
-  height: 128rpx;
-  margin: 20rpx;
+  width: 128 rpx;
+  height: 128 rpx;
+  margin: 20 rpx;
   border-radius: 50%;
 }
 
@@ -18,4 +18,43 @@
 
 .usermotto {
   margin-top: 200px;
+}
+
+.container {
+  padding-top: 0
+}
+
+.searchbar-result {
+  margin-top: 0;
+  font-size: 14px;
+}
+
+.searchbar-result .weui-cell__bd {
+  padding: 2px 0 2px 20px;
+  color: #666;
+}
+
+.searchbar-result:before {
+  display: none;
+}
+
+.hot-search-container {
+  padding: 40rpx 50rpx;
+}
+.hot-search-label {
+  font-size: 12px;
+  margin: 0 0 8px 6px;
+}
+
+.tag {
+  font-size: 12px;
+  color: #ffffff;
+  padding: 2px 8px;
+  display: inline-block;
+  border-radius: 4px;
+  margin: 4px 6px;
+  background-color: #1890ff;
+}
+.tag:active {
+  background-color: #186cef;
 }
