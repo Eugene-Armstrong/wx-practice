@@ -17,7 +17,7 @@ Page({
       url: '../logs/logs'
     })
   },
-  onLoad: function () {
+  onLoad() {
     if (app.globalData.userInfo) {
       this.setData({
         userInfo: app.globalData.userInfo,
@@ -53,25 +53,33 @@ Page({
       hasUserInfo: true
     })
   },
-  showInput: function () {
+  showInput() {
     this.setData({
       inputShowed: true
     });
   },
-  hideInput: function () {
-    this.setData({
-      inputVal: "",
-      inputShowed: false
-    });
+  searchByVoice() {
+    wx.showToast({
+      title: 'Search by voice',
+      icon: 'none',
+      duration: 2000
+    })
   },
-  clearInput: function () {
+  clearInput() {
     this.setData({
       inputVal: ""
     });
   },
-  inputTyping: function (e) {
+  inputTyping(e) {
     this.setData({
       inputVal: e.detail.value
     });
+  },
+  capture() {
+    wx.showToast({
+      title: 'Take picture',
+      icon: 'none',
+      duration: 2000
+    })
   }
 })

@@ -58,3 +58,21 @@
 .tag:active {
   background-color: #186cef;
 }
+.capture-wrapper {
+  width: 100%;
+  position: fixed;
+  bottom: 50rpx;
+  text-align: center;
+}
+.capture {
+  width: 60rpx;
+  height: 60rpx;
+  background-color: #186cef;
+  padding: 24rpx;
+  border-radius: 50%;
+}
+.voice {
+  width: 60rpx;
+  height: 40rpx;
+  vertical-align: middle;
+}
